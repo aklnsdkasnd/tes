@@ -429,23 +429,66 @@
 
       /* --- Responsif --- */
       @media (max-width: 640px) {
+        /* [PERUBAHAN DIMULAI DI SINI] */
         .container {
           margin: 10px;
-          padding: 30px 20px;
+          /* Mengurangi padding vertikal dan horizontal */
+          padding: 20px 15px;
         }
+
+        .photo-container {
+          /* Mengecilkan ukuran foto dan margin bawahnya */
+          width: 120px;
+          height: 120px;
+          margin-bottom: 20px;
+        }
+        
+        .section-1 .subtitle {
+            margin-bottom: 15px;
+        }
+
+        /* Mengurangi ukuran semua judul besar */
         .section-1 .main-title {
-          font-size: 2.8rem;
+          font-size: 2.5rem;
+          margin-bottom: 15px;
         }
         .section-2 .greeting {
-          font-size: 2.4rem;
+          font-size: 2.2rem;
+          margin-bottom: 15px;
+        }
+        .section-3 .message-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
         .section-4 .final-message {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
+          margin-bottom: 15px;
         }
-        .photo-container {
-          width: 140px;
-          height: 140px;
+        
+        /* Mengurangi ukuran font lain yang cukup besar */
+        .section-1 .date-large {
+            font-size: 1.5rem;
         }
+        .section-1 .for-text {
+            font-size: 1.8rem;
+        }
+        .section-4 .wish-text {
+            font-size: 1.2rem;
+        }
+        
+        /* Mengurangi ukuran teks agar lebih pas */
+        .section-2 .message-text,
+        .section-3 .message-list {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Mengurangi padding pada item pesan agar lebih ramping */
+        .section-3 .message-item {
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        /* [PERUBAHAN BERAKHIR DI SINI] */
       }
     </style>
   </head>
